@@ -1,0 +1,37 @@
+#include <Servo.h>
+Servo x;
+Servo y; 
+Servo b;
+Servo z;
+void setup() {
+x.attach(6);
+x.write(0);
+y.attach(5);
+y.write(0); 
+b.attach(9);
+b.write(0);
+z.attach(3);
+z.write(0);
+}
+void loop() {
+x.write(15);
+y.write(15);
+b.write(15);
+z.write(15);
+delay(1000);
+x.write(180);
+y.write(180);
+delay(1000);
+x.write(15);
+y.write(15);
+b.write(15);
+z.write(15);
+delay(1000);
+x.write(180);
+y.write(180);
+b.write(180);
+z.write(180);
+delay(1000);
+}
+
+
